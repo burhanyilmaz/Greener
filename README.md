@@ -1,6 +1,6 @@
 ### Screenshots
-![WelcomeScreen]('./resource/images/welcome.png')
-![LoginScreen]('./resource/images/welcome.png')
+![WelcomeScreen]('https://github.com/burhanyilmaz/Greener/blob/master/resource/images/login.png')
+![LoginScreen]('https://github.com/burhanyilmaz/Greener/blob/master/resource/images/welcome.png')
 
 ### Design
 [Paolo Spazzini](https://dribbble.com/paolospazzini)
