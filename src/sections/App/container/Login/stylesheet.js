@@ -13,7 +13,7 @@ const styles = {
     },
     title: {
         color: '#333643',
-        fontSize: 20,
+        fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 32,
         marginLeft: 3,

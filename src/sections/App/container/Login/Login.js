@@ -50,7 +50,12 @@ class Login extends Component {
             label="Password"
             secureTextEntry={hidePassword}
           />
-          <Button title="Login" backgroundColor="#60d4ae" margin={41} />
+          <Button
+            title="Login"
+            backgroundColor="#60d4ae"
+            margin={41}
+            onPress={() => this.props.navigation.navigate("Browse")}
+          />
           <Text style={forgotPassText}>Forgot your password?</Text>
         </View>
       </View>

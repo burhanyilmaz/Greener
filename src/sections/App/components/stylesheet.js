@@ -54,6 +54,53 @@ const styles ={
     inputContainer: {
         borderBottomColor: 'red',
     },
+    cardContainer: {
+        _: {
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: '#fff',
+          borderColor: 'rgba(0,0,0,0.01)',
+          margin: 8,
+          padding: 40,
+          paddingLeft: 16,
+          paddingRight: 16,
+          marginLeft: 0,
+          borderRadius: 5,
+          elevation: 14,
+        },
+        imageContainer: {
+          _: {
+            backgroundColor: "rgb(232, 251, 246)",
+            height: 60,
+            width: 60,
+            borderRadius: 30,
+            alignItems: "center",
+            justifyContent: "center",
+          },
+          image: {
+            height: 34, width: 34,
+          }
+        },
+        productNameText: {
+            fontSize: 17,
+            color: '#3e3e3e',
+            marginTop: 16,
+        },
+        productCountText: {
+            fontSize: 14,
+            color: '#d1d5df',
+            marginTop: 2,
+        }
+      },
+      avatarContainer: {
+        _: {},
+        image: {
+          height: 42,
+          width: 42,
+          borderRadius: 21
+        }
+      },
 };
 
 export default styles;
