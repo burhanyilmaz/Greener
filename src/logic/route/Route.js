@@ -3,7 +3,7 @@ import { StackNavigator } from 'react-navigation';
 import { YellowBox, View } from 'react-native';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
-import { Welcome, Login } from '../../sections/App/index';
+import { Welcome, Login , Explore} from '../../sections/App/index';
 import Browse from '../../sections/App/container/Browse/Browse';
 
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
@@ -33,6 +33,21 @@ const RootStack = StackNavigator(
     },
     Browse: {
       screen: Browse,
+      navigationOptions: {
+        headerTintColor: '#c6cdd7',
+        headerTitleStyle: { color: '#f4f4f4' },
+        headerStyle: {
+          elevation: 0,
+          shadowOpacity: 0,
+          shadowOffset: {
+            height: 0,
+          },
+          shadowRadius: 0,
+        }
+      },
+    },
+    Explore: {
+      screen: Explore,
       navigationOptions: {
         headerTintColor: '#c6cdd7',
         headerTitleStyle: { color: '#f4f4f4' },

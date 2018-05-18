@@ -33,7 +33,7 @@ export default props => {
 
   return (
     <View style={input}>
-      <Text style={inputText}>{label}</Text>
+      {label && <Text style={inputText}>{label}</Text>}
       <TextInput
         style={inputContainer}
         underlineColorAndroid="rgba(0,0,0,0.1)"

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, StatusBar } from "react-native";
 import styles from "./stylesheet";
 import { row1, row2, user } from "./datas";
 import Card from "../../components/Card";
@@ -16,12 +16,13 @@ class Browse extends Component {
     return data.map((product, index) => {
       const { image, title, count } = product;
       return (
-        <Card
+          <Card
           key={title}
           productCount={count}
           imageUri={image}
           title={title}
           isRightItem={index % 2}
+          onPress={() => this.props.navigation.navigate("Explore")}
         />
       );
     });
