@@ -3,9 +3,13 @@ Welcome Screen            |  Login Screen
 :-------------------------:|:-------------------------:
 ![](./resource/images/welcome.png) |  ![](./resource/images/login.png)
 
-Browse Screen            |  ---
+Browse Screen            |  Explore Screen
 :-------------------------:|:-------------------------:
-![](./resource/images/browse.png) |  ![](./resource/images/browse.png)
+![](./resource/images/browse.png) |  ![](./resource/images/explore.png)
+
+Product Screen            |  Settings Screen
+:-------------------------:|:-------------------------:
+ coming soon |  coming soon
 ### Designed
 
 [Paolo Spazzini](https://dribbble.com/paolospazzini)
