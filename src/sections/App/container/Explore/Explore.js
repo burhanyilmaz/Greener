@@ -7,7 +7,8 @@ import {
   StyleSheet,
   ScrollView,
   Dimensions,
-  StatusBar
+  StatusBar,
+  TouchableOpacity
 } from "react-native";
 import styles from "./styleshet";
 import Input from "../../components/Input";
@@ -28,11 +29,16 @@ class Explore extends Component {
       >
         {sliderImages.map(image => {
           return (
-            <Image
+            <TouchableOpacity
               key={image.uri}
-              style={contentContainer.sliderImages.image}
-              source={{ uri: image.uri }}
-            />
+              onPress={() => this.props.navigation.navigate("Product")}
+            >
+              <Image
+                key={image.uri}
+                style={contentContainer.sliderImages.image}
+                source={{ uri: image.uri }}
+              />
+            </TouchableOpacity>
           );
         })}
       </ScrollView>
@@ -45,16 +51,20 @@ class Explore extends Component {
       <View style={contentContainer.otherImages._}>
         {otherImages.map((image, index) => {
           return (
-            <Image
+            <TouchableOpacity
               key={image.uri}
-              style={[
-                contentContainer.otherImages.image,
-                { marginRight: index % 2 !== 0 ? 0 : 8 }
-              ]}
-              source={{
-                uri: image.uri
-              }}
-            />
+              onPress={() => this.props.navigation.navigate("Product")}
+            >
+              <Image
+                style={[
+                  contentContainer.otherImages.image,
+                  { marginRight: index % 2 !== 0 ? 0 : 8 }
+                ]}
+                source={{
+                  uri: image.uri
+                }}
+              />
+            </TouchableOpacity>
           );
         })}
       </View>
@@ -85,7 +95,14 @@ class Explore extends Component {
           style={contentContainer._}
           showsVerticalScrollIndicator={false}
         >
-          <Image style={contentContainer.bigImage} source={{ uri: bigImage }} />
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("Product")}
+          >
+            <Image
+              style={contentContainer.bigImage}
+              source={{ uri: bigImage }}
+            />
+          </TouchableOpacity>
           {this._renderSlider()}
           {this._renderOtherImages()}
         </ScrollView>

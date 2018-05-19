@@ -7,9 +7,9 @@ Browse Screen            |  Explore Screen
 :-------------------------:|:-------------------------:
 ![](./resource/images/browse.png) |  ![](./resource/images/explore.png)
 
-Product Screen            |  Settings Screen
+Product Screen            |  ---  Screen
 :-------------------------:|:-------------------------:
- coming soon |  coming soon
+![](./resource/images/product.png) |  ![](./resource/images/product.png)
 ### Designed
 
 [Paolo Spazzini](https://dribbble.com/paolospazzini)
