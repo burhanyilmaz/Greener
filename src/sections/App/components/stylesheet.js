@@ -123,6 +123,73 @@ const styles = {
       borderColor: "#48BBEC",
       backgroundColor: "#f9f9f9"
     }
+  },
+  slider: {
+    _: {
+      flex: 1,
+      marginTop: 16
+    },
+    label: {
+      _: {
+        marginBottom: 16,
+      },
+      text: {
+        color: "rgb(197, 204, 214)"
+      }
+    },
+    slider: {
+      top: 24,
+      width: width,
+      position: "absolute",
+      flex: 1,
+      padding: 0,
+      margin: 0,
+      alignSelf: "stretch",
+      justifyContent: "flex-start"
+    },
+    price: {
+      _: {
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        marginTop: 8
+      },
+      text: {
+        color: "#9fa7b3"
+      }
+    }
+  },
+  switchContainer: {
+    _: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      marginTop: 16
+    },
+    labelText: {
+      color: "rgb(197, 204, 214)"
+    }
+  },
+  editableTextContainer: {
+    _: {},
+    label: {
+      paddingLeft: 4,
+      color: "rgb(197, 204, 214)"
+    },
+    inputContainer: {
+      _: {
+        flexDirection: "row",
+        justifyContent: "space-between"
+      },
+      input: {
+        width: width / 1.3,
+        height: 34,
+        marginTop: 0,
+        paddingLeft: 4,
+        fontSize: 12,
+        color: "#2d313e",
+        borderRadius: 4
+      }
+    }
   }
 };
 

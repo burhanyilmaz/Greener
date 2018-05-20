@@ -3,7 +3,7 @@ import { StackNavigator } from "react-navigation";
 import { YellowBox, View, Button, Text } from "react-native";
 import { Provider } from "react-redux";
 import store from "../redux/store";
-import { Welcome, Login, Explore, Product } from "../../sections/App/index";
+import { Welcome, Login, Explore, Product, Settings } from "../../sections/App/index";
 import Browse from "../../sections/App/container/Browse/Browse";
 
 YellowBox.ignoreWarnings([
@@ -68,7 +68,11 @@ const RootStack = StackNavigator(
         ),
         headerStyle: navigationOptions.headerStyle
       }
-    }
+    },
+    Settings: {
+      screen: Settings,
+      navigationOptions
+    },
   },
   {
     initialRouteName: "Welcome"

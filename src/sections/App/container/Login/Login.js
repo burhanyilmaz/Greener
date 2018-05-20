@@ -5,7 +5,8 @@ import {
   TextInput,
   Dimensions,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import styles from "./stylesheet";
 import Button from "../../components/Button";
@@ -39,7 +40,7 @@ class Login extends Component {
     const { hidePassword } = this.state;
 
     return (
-      <View style={mainContainer}>
+      <ScrollView style={mainContainer}>
         <Text style={title}>Login</Text>
         <View style={subContainer}>
           <Input hidePassword label="Email" />
@@ -58,7 +59,7 @@ class Login extends Component {
           />
           <Text style={forgotPassText}>Forgot your password?</Text>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

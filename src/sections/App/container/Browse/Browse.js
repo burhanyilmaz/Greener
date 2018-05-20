@@ -16,7 +16,7 @@ class Browse extends Component {
     return data.map((product, index) => {
       const { image, title, count } = product;
       return (
-          <Card
+        <Card
           key={title}
           productCount={count}
           imageUri={image}
@@ -79,7 +79,11 @@ class Browse extends Component {
       <View style={mainContainer}>
         <View style={subContainer}>
           <Text style={title}>Browse</Text>
-          <Avatar image={user.image} />
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("Settings")}
+          >
+            <Avatar image={user.image} />
+          </TouchableOpacity>
         </View>
         <View style={tabContainer._}>
           {this._renderTab("Products", 1)}
