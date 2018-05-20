@@ -1,4 +1,6 @@
 
+![](./resource/images/logo.png)
+
 Welcome Screen            |  Login Screen
 :-------------------------:|:-------------------------:
 ![](./resource/images/welcome.png) |  ![](./resource/images/login.png)
